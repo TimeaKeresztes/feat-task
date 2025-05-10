@@ -1,1 +1,21 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans');
+@import 'tailwindcss';
+
+@layer base {
+    body {
+        @apply bg-[#FFE6C9] text-[#73114B];
+    }
+
+    button {
+        @apply hover:cursor-pointer;
+    }
+}
+
+html,
+body {
+    font-family: 'Nunito Sans';
+}
+
+input[type='checkbox'] {
+    accent-color: #7f265b;
+}
