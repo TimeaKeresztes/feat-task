@@ -35,11 +35,11 @@ defineProps({
 <template>
     <div class="flex flex-col text-[#828282]">
         <div class="flex flex-col gap-y-1 mb-6">
-            <label for="email">{{ emailLabel }}</label>
+            <label for="email" class="text-[14px]">{{ emailLabel }}</label>
             <input :class="inputClasses" v-model="email" placeholder="hello@feat.hu" type="email" required />
         </div>
         <div class="flex flex-col gap-y-1 mb-2">
-            <label for="password">{{ passwordLabel }}</label>
+            <label for="password" class="text-[14px]">{{ passwordLabel }}</label>
             <input :class="inputClasses" v-model="password" placeholder="***************" type="password" required />
         </div>
         <div class="flex flex-row justify-between mb-8">

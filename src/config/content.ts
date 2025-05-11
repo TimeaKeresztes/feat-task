@@ -30,7 +30,7 @@ export const CONTENT_ENGLISH: Content = {
     createAccountLabel: 'Create an account',
     welcomeLabel: 'Hello',
     jobTitleLabel: 'Job title:',
-    featuresLabel: 'features:',
+    featuresLabel: 'Features:',
     logoutLabel: 'Logout',
 }
 
@@ -48,6 +48,6 @@ export const CONTENT_HUNGARIAN: Content = {
     createAccountLabel: 'Hozzon létre egyet!',
     welcomeLabel: 'Üdv',
     jobTitleLabel: 'Munkakör:',
-    featuresLabel: 'fícsörök:',
+    featuresLabel: 'Fícsörök:',
     logoutLabel: 'Kijelentkezés',
 }

@@ -18,9 +18,9 @@ const sharedBgContent = computed(() =>
         <img :src="topLeftGlobe" alt="globe" class="absolute top-0" />
         <img :src="backgroundImage" alt="background image" class="m-auto" />
         <div class="flex flex-col gap-[15px] -mt-[40px]">
-            <h1 class="text-3xl font-bold">{{ sharedBgContent.globalTitle }}</h1>
+            <h1 class="text-[32px] font-bold">{{ sharedBgContent.globalTitle }}</h1>
             <p class="text-xl">{{ sharedBgContent.globalDescription }}</p>
         </div>
-        <img :src="bottomRightGlobe" alt="Globe" class="absolute bottom-1/6 -right-4" />
+        <img :src="bottomRightGlobe" alt="globe" class="absolute bottom-1/6 -right-4" />
     </div>
 </template>

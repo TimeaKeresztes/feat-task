@@ -20,7 +20,7 @@ const { first_name, last_name, job_tile, features } = userStore.userData || {}
 
 <template>
     <div>
-        <div class="flex flex-col gap-y-[10px] mt-[76px]">
+        <div class="flex flex-col gap-y-[10px] mt-[76px] lg:max-w-4/5 max-w-full">
             <h1 class="text-4xl">
                 {{ welcomeLabel }}
                 <span class="font-bold">{{ first_name }} {{ last_name }}</span>
@@ -31,7 +31,7 @@ const { first_name, last_name, job_tile, features } = userStore.userData || {}
             </p>
             <p>{{ featuresLabel }}</p>
 
-            <div v-for="feature in features" class="flex flex-col">
+            <div v-for="feature in features" class="flex flex-col mb-3">
                 <p :style="{ color: feature.color }" class="font-bold">
                     {{ feature.title }}
                 </p>
