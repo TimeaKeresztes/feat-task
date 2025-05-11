@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { setCSRFToken } from '../utils/token'
+import { login } from '../utils/login'
+import { useUserStore } from '../store/useUserStore'
+
+const userStore = useUserStore()
 
 const email = ref('')
 const password = ref('')
@@ -8,7 +13,12 @@ const rememberMe = ref(false)
 const inputClasses = 'h-10 rounded-[5px] border-[#DED2D9] border-[1px] p-2.5'
 
 const onSubmit = async () => {
-    console.log('Submitted')
+    await setCSRFToken()
+    const loginRes = await login(email.value, password.value)
+    if (loginRes !== null) {
+        userStore.setUserData(loginRes.data)
+        userStore.auth()
+    } else alert('Invalid email or password')
 }
 
 defineProps({

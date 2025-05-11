@@ -4,12 +4,12 @@ import topLeftGlobe from '../assets/globe-top-left.svg'
 import bottomRightGlobe from '../assets/globe-bottom-right.svg'
 import { computed } from 'vue'
 import { ENGLISH_LANG_LABEL, useLanguageStore } from '../store/useLanguageStore'
-import { content_english, content_hungarian } from '../config/content'
+import { CONTENT_ENGLISH, CONTENT_HUNGARIAN } from '../config/content'
 
 const languageStore = useLanguageStore()
 
 const sharedBgContent = computed(() =>
-    languageStore.selectedLanguage === ENGLISH_LANG_LABEL ? content_english : content_hungarian,
+    languageStore.selectedLanguage === ENGLISH_LANG_LABEL ? CONTENT_ENGLISH : CONTENT_HUNGARIAN,
 )
 </script>
 
